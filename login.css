@@ -1,0 +1,351 @@
+
+*
+{
+    scroll-behavior: smooth;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing:border-box ;
+    -moz-box-sizing: border-box;
+}
+
+body 
+{
+
+  font-family: "Nunito Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: weight;
+  font-style: normal;
+  margin: 0;
+  padding: 0%;
+
+
+}
+
+
+/* section */
+
+
+section 
+{
+    height: 100vh; /* This makes the section fill 100% of the viewport height */
+    width: 100%;   /* This makes the section fill the full width of the page */
+    margin: 0;     /* Remove any default margin */
+    padding: 0;    /* Remove any default padding */
+    box-sizing: border-box; /* Ensure padding/borders are included in width/height */
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    width: 100%;
+    animation: changeBg 10s infinite; /* Apply the animation */
+    transition: background-color 2s ease-in-out;
+    
+}
+
+/* Define keyframes for background color animation */
+@keyframes changeBg {
+    0% {
+        background:rgb(255, 255, 255);
+        
+    }
+    25% {
+        background: rgb(255, 255, 255);
+        
+    }
+    50% {
+        background: black;
+        
+    }
+    75% {
+        background: rgb(0, 0, 0);
+        
+    }
+    100% {
+        background: rgb(255, 255, 255);
+        
+    }
+  }
+
+
+
+.contaneiners 
+{
+    height: 100vh; /* This makes the section fill 100% of the viewport height */
+    width: 100%;   /* This makes the section fill the full width of the page */
+    margin: 0;     /* Remove any default margin */
+    padding: 0;    /* Remove any default padding */
+    box-sizing: border-box; /* Ensure padding/borders are included in width/height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    gap: 0;
+    
+
+}
+  
+ .contaneiners:last-child
+ {
+    background-image: 
+    linear-gradient(rgba(0, 0, 0, 0.415), rgba(0, 0, 0, 0.415)), 
+    url('./221581.gif');
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+    object-fit: fill;
+
+ }
+
+
+.theform-for-signup 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+    background-color: rgba(0, 0, 0, 0.367);
+    backdrop-filter: blur(30px);
+    padding: 5rem 5rem;
+}
+.theform-for-signup form 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+#email 
+{
+    width: 500px;
+    height: 7vh;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    background-color: transparent;
+
+}
+#email::placeholder 
+{
+    position: relative;
+    left: 5px;
+
+    font-weight: 100;
+    color: white;
+}
+
+#password 
+{
+    
+    width: 500px;
+    height: 7vh;
+    color: rgb(255, 255, 255);
+    border: none;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    background-color: transparent;
+
+
+}
+
+#password::placeholder
+{
+    position: relative;
+    left: 5px;
+    font-weight: 100;
+    color: white;
+}
+
+#submit 
+{
+    position: relative;
+    top: 8vh;
+    width: 200px;
+    height: 7vh;
+    border: none;
+    background-color: purple;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+
+}
+
+@media (max-width:768px) 
+{
+
+
+
+    .theform-for-signup 
+ {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        background-color: rgba(0, 0, 0, 0.367);
+        backdrop-filter: blur(30px);
+        padding: 6rem 1rem;
+    }    
+    
+#email 
+{
+    position: relative;
+    top: 0vh;
+    width: 300px;
+    height: 7vh;
+    border: none;
+    background-color:transparent;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    
+}
+
+#email::placeholder 
+{
+    position: relative;
+    left: 5px;
+    font-weight: 100;
+}
+
+
+
+
+#password 
+{
+    
+    width: 300px;
+    height: 7vh;
+    color: rgb(0, 0, 0);
+    border: none;
+    border-bottom: 1px rgb(255, 255, 255) solid;
+    background-color: transparent;
+
+
+}
+
+#password::placeholder
+{
+    position: relative;
+    left: 5px;
+    font-weight: 100;
+}
+
+}
+
+
+
+
+
+label 
+{
+    width: 100%;
+    text-align: left;
+    position: relative;
+    padding: 5px 0px;
+    color: white;
+}
+
+
+@media (max-width:768px) {
+
+
+
+
+    section 
+{
+    height: 100vh; 
+    width: 100%;  
+    margin: 0;    
+    padding: 0;    
+    box-sizing: border-box; 
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    width: 100%;
+    animation: changeBg 10s infinite; /* Apply the animation */
+    transition: background-color 2s ease-in-out;
+    
+}
+
+#submit 
+{
+    position: relative;
+    top: 10vh;
+    width: 200px;
+    height: 7vh;
+    border: none;
+
+}
+
+
+
+    .contaneiners:last-child
+    {
+        display: none;
+    }
+    
+}
+
+.Window-login 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    gap: 30px;
+   
+}
+
+.theimage 
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column wrap;
+}
+
+.theimage h1 
+{
+    background-color: white;
+    backdrop-filter: 30px;
+    stroke: rgb(255, 255, 255);
+    padding: 1rem 5rem;
+    color: black;
+    font-weight: 500;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+    text-align: left;
+    border-radius: 30px 30px 30px 0px;
+
+}
+.theimage h1 span
+{
+
+    background-color: purple;
+    color: rgb(255, 255, 255);
+    padding: 1rem 1rem;
+    border-radius: 30px 0px 30px 0px;
+    
+
+}
+.theimage img 
+{
+    width: 500px;
+    transition-duration: 1s;
+    animation: myAnim 2s infinite;
+    position: relative;
+    top: 20px;
+}
+
+@keyframes myAnim {
+	0% {
+		transform: scale(1);
+	}
+
+	50% {
+		transform: scale(1.1);
+	}
+
+	100% {
+		transform: scale(1);
+	}
+}
+
+
